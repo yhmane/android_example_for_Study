@@ -13,3 +13,22 @@ android
         result.setText(Integer.toString(num1 + num2));
     }
 </code></pre>
+
+<img src="./screenshot/tut2알림창.png" width="300" height="300">
+<pre><code>   
+        listBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("메뉴판");
+                builder.setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+                        Toast.makeText(getApplicationContext(), items[i], Toast.LENGTH_SHORT).show();
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+        });
+</code></pre>
