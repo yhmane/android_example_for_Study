@@ -14,6 +14,8 @@ android
     }
 </code></pre>
 
+### 알림창
+
 <img src="./screenshot/tut2알림창.png" width="300" height="300">
 <pre><code>   
         listBtn.setOnClickListener(new View.OnClickListener() {
